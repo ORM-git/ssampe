@@ -140,12 +140,12 @@
 @media (max-width:767px){
   body{margin:0}
   .landing-wrapper .top{height:52px}
-  .landing-wrapper .hero{padding-top:16px;padding-bottom:16px}
+  .landing-wrapper .hero{padding-top:16px;padding-bottom:18px}
   .landing-wrapper .hero h1{margin-top:8px}
   .landing-wrapper .hero h1 .l2{margin-top:4px}
-  .landing-wrapper .hero .sub{margin-top:6px}
-  .landing-wrapper .cta-row{margin-top:10px}
-  .landing-wrapper section.hjs{padding-top:16px}
+  .landing-wrapper .hero .sub{margin-top:14px}
+  .landing-wrapper .hj .cta-row{margin-top:16px}
+  .landing-wrapper section.hjs{padding-top:18px}
   .landing-wrapper .fj-note{margin-top:4px}
 }
 
@@ -153,15 +153,25 @@
 @media (min-width:768px){
   body{margin:0}
   .landing-wrapper .top{height:48px}
-  .landing-wrapper .hero{padding-top:4px;padding-bottom:8px}
+  .landing-wrapper .hero{padding-top:4px;padding-bottom:24px}
   .landing-wrapper .hero h1{margin-top:2px}
   .landing-wrapper .hero h1 .l2{margin-top:0}
-  .landing-wrapper .hero .sub{margin-top:10px;max-width:none}
-  .landing-wrapper .hero .cta-row{margin-top:10px}
-  .landing-wrapper section.hjs{padding-top:6px}
+  .landing-wrapper .hero .sub{margin-top:20px;max-width:none}
+  .landing-wrapper section.hjs{padding-top:24px}
   .landing-wrapper .jc{margin-bottom:6px;padding:12px}
   .landing-wrapper .jc+.jc{padding-bottom:0}
   .landing-wrapper .jc-main{gap:6px}
-  .landing-wrapper .hj .cta-row{margin-top:10px}
+  .landing-wrapper .hj .cta-row{margin-top:16px}
   .landing-wrapper .fj-note{margin-top:4px}
 }
+
+/* One vertical rhythm from hero to footer: R = 36px phones, 48px desktop.
+   Same background: R between blocks. A background band gets R inside and R outside.
+   Hero to job cards splits R across the hero edge (R/2 each side) to keep the first screen. */
+.landing-wrapper{--sec:36px}
+@media (min-width:768px){.landing-wrapper{--sec:48px}}
+.landing-wrapper main{padding-bottom:0}
+.landing-wrapper section.s.band{margin-top:var(--sec)}
+.landing-wrapper .rv{padding-bottom:var(--sec)}
+.landing-wrapper .free-preview-band{padding-top:var(--sec);padding-bottom:var(--sec)}
+.landing-wrapper footer{padding-top:var(--sec)}
