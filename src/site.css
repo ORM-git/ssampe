@@ -1,30 +1,20 @@
 /* Sections added for the standalone site (phone-first layouts). Tokens come from landing.css. */
 .landing-wrapper{padding-bottom:96px} /* room for the sticky bar */
 
-/* Hero job cards (blue panel, reuses the .fj-card styles) */
-.landing-wrapper .hj{max-width:560px;margin:24px auto 0;padding:16px 16px 14px;background:var(--blue);border-radius:24px;color:#fff;text-align:center}
-.landing-wrapper .hj-tag{margin:0 0 12px;font-size:13px;font-weight:600;opacity:.9}
+/* Job cards block (after the hero) */
+.landing-wrapper .hj{max-width:560px;margin:0 auto;text-align:center}
 .landing-wrapper .hj .fj-cards{margin-top:0}
 .landing-wrapper .hj-logo{flex:none;width:44px;height:44px;display:grid;place-items:center}
 .landing-wrapper .hj-logo svg{width:40px;height:40px}
-@media (min-width:768px){.landing-wrapper .hj{margin-top:40px;padding:24px 24px 18px}}
 
-/* 2. Find jobs (blue, people photos + job cards) */
-.landing-wrapper .fj{background:var(--blue);color:#fff;text-align:center;padding:40px 0 32px}
-.landing-wrapper .fj-in{max-width:560px}
-.landing-wrapper .fj h2{margin:0;font-size:32px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
-.landing-wrapper .fj-sub{margin:12px 0 0;font-size:17px;opacity:.95}
-.landing-wrapper .fj-ppl{display:flex;justify-content:center;margin-top:20px}
-.landing-wrapper .fj-ppl img{width:56px;height:56px;border-radius:50%;border:3px solid #fff;object-fit:cover;margin-left:-12px;background:var(--blue-100)}
-.landing-wrapper .fj-ppl img:first-child{margin-left:0}
-.landing-wrapper .fj-stars{margin:4px 0 0;color:#FBBF24;font-size:22px;letter-spacing:2px;line-height:1}
-.landing-wrapper .fj-proof{margin:6px 0 0;font-size:18px}
-.landing-wrapper .fj-cards{position:relative;margin-top:20px;max-height:340px;overflow:hidden;text-align:left;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
-.landing-wrapper .fj-card{background:#fff;color:var(--ink);border-radius:16px;margin-bottom:12px;overflow:hidden}
+.landing-wrapper .fj-cards{text-align:left}
+/* second card fades out: only its top rows show, height still comes from content */
+.landing-wrapper .fj-card+.fj-card :is(.fj-sk,.fj-loc,.fj-f){display:none}
+.landing-wrapper .fj-card+.fj-card{padding-bottom:16px;-webkit-mask-image:linear-gradient(#000 35%,transparent);mask-image:linear-gradient(#000 35%,transparent)}
+.landing-wrapper .fj-card{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);color:var(--ink);border-radius:16px;margin-bottom:12px;overflow:hidden}
 .landing-wrapper .fj-h{display:flex;justify-content:space-between;gap:12px;padding:16px 16px 0}
 .landing-wrapper .fj-h h3{margin:0;font-size:19px;line-height:1.25;font-weight:700}
 .landing-wrapper .fj-h p{margin:2px 0 0;color:var(--muted);font-size:15px}
-.landing-wrapper .fj-lg{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px}
 .landing-wrapper .fj-tags{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px 0}
 .landing-wrapper .fj-tags span{border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px;font-weight:500}
 .landing-wrapper .fj-tags .pay{color:var(--green);border-color:var(--green)}
@@ -33,12 +23,11 @@
 .landing-wrapper .fj-f{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding:10px 16px;border-top:1px solid var(--line)}
 .landing-wrapper .fj-view{background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:15px;border-radius:999px;padding:8px 18px}
 .landing-wrapper .fj-star{color:#F59E0B;font-size:22px}
-.landing-wrapper .fj-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;min-height:56px;background:#fff;color:var(--ink);border-radius:16px;font-size:20px;font-weight:600;text-decoration:none}
-.landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;opacity:.9}
-@media (min-width:768px){.landing-wrapper .fj{padding:64px 0 48px}.landing-wrapper .fj h2{font-size:44px}}
+.landing-wrapper .fj-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;min-height:56px;background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:16px;font-size:20px;font-weight:600;text-decoration:none}
+.landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;color:var(--muted)}
 
-/* 3. Stats section spacing */
-.landing-wrapper .stats-sec{padding-bottom:var(--sec)}
+/* stats row now sits in the hero under the CTA */
+.landing-wrapper .hero .stats{margin-top:32px}
 
 /* 4. Logo slider (static copy of the jobs ticker look) */
 .landing-wrapper .ls{overflow:hidden;background:#0A0A0A;border-block:1px solid rgba(255,255,255,.1);height:84px;display:flex;align-items:center}

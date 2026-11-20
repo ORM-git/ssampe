@@ -15,7 +15,7 @@ App links point to https://careermonke.com.
 Search `index.html` for `PLACEHOLDER`:
 - Reviews (marquee and the wall after the FAQ): `[Reviewer name N]`, `[PLACEHOLDER REVIEW N ...]`, initials `R1`..`R6`
 - Founder stats: the three `[00K+]` / `[PLACEHOLDER stat label N]` items (CareerMonke has no founder stats to copy)
-- Hero job cards (Microsoft, Spotify) and the Find jobs / logo slider companies are sample listings, labelled as such on the page.
+- Job cards (Microsoft, Spotify, after the hero) and the logo slider companies are sample listings; the cards are no longer labelled as samples on the page.
 
 ## Deploy on Netlify
 

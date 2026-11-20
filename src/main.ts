@@ -42,17 +42,13 @@ function reviewsMarquee(track: HTMLElement) {
 const rv = document.querySelector<HTMLElement>(".rv-track");
 if (rv) reviewsMarquee(rv);
 
-// Sticky View Jobs bar: hidden at first, slides up once the comparison section
-// is reached, then stays.
+// Sticky View Jobs bar: shown only while the comparison section is reached or
+// scrolled past; hides again above it. CSS does the slide both ways.
 const bar = document.querySelector<HTMLElement>(".sb");
 const cmp = document.getElementById("vs")?.closest("section");
 if (bar && cmp) {
-  const check = () => {
-    if (cmp.getBoundingClientRect().top < innerHeight * 0.75) {
-      bar.classList.add("on");
-      removeEventListener("scroll", check);
-    }
-  };
+  const check = () => bar.classList.toggle("on", cmp.getBoundingClientRect().top < innerHeight * 0.5);
   addEventListener("scroll", check, { passive: true });
+  addEventListener("resize", check);
   check(); // page may load already scrolled (reload, anchor)
 }
