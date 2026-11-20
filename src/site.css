@@ -26,8 +26,9 @@
 .landing-wrapper .fj-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;min-height:56px;background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:16px;font-size:20px;font-weight:600;text-decoration:none}
 .landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;color:var(--muted)}
 
-/* stats row now sits in the hero under the CTA */
-.landing-wrapper .hero .stats{margin-top:32px}
+/* stats row, after the job cards */
+.landing-wrapper .stats-row{padding-bottom:var(--sec)}
+.landing-wrapper .stats-row .stats{margin-top:0}
 
 /* 4. Logo slider (static copy of the jobs ticker look) */
 .landing-wrapper .ls{overflow:hidden;background:#0A0A0A;border-block:1px solid rgba(255,255,255,.1);height:84px;display:flex;align-items:center}
