@@ -1,0 +1,93 @@
+/* Sections added for the standalone site (phone-first layouts). Tokens come from landing.css. */
+.landing-wrapper{padding-bottom:96px} /* room for the sticky bar */
+
+/* Hero screenshots */
+.landing-wrapper .shots{list-style:none;margin:32px auto 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:920px}
+.landing-wrapper .shots li{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:6px 6px 10px;box-shadow:var(--shadow)}
+.landing-wrapper .shots img{display:block;width:100%;height:auto;border-radius:10px}
+.landing-wrapper .shots span{display:block;margin-top:6px;font-size:12px;font-weight:600;color:var(--navy)}
+@media (min-width:768px){.landing-wrapper .shots{gap:20px}.landing-wrapper .shots span{font-size:14px}}
+
+/* 2. Find jobs (blue, people photos + job cards) */
+.landing-wrapper .fj{background:var(--blue);color:#fff;text-align:center;padding:40px 0 32px}
+.landing-wrapper .fj-in{max-width:560px}
+.landing-wrapper .fj h2{margin:0;font-size:32px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.landing-wrapper .fj-sub{margin:12px 0 0;font-size:17px;opacity:.95}
+.landing-wrapper .fj-ppl{display:flex;justify-content:center;margin-top:20px}
+.landing-wrapper .fj-ppl img{width:56px;height:56px;border-radius:50%;border:3px solid #fff;object-fit:cover;margin-left:-12px;background:var(--blue-100)}
+.landing-wrapper .fj-ppl img:first-child{margin-left:0}
+.landing-wrapper .fj-stars{margin:4px 0 0;color:#FBBF24;font-size:22px;letter-spacing:2px;line-height:1}
+.landing-wrapper .fj-proof{margin:6px 0 0;font-size:18px}
+.landing-wrapper .fj-cards{position:relative;margin-top:20px;max-height:340px;overflow:hidden;text-align:left;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.landing-wrapper .fj-card{background:#fff;color:var(--ink);border-radius:16px;margin-bottom:12px;overflow:hidden}
+.landing-wrapper .fj-h{display:flex;justify-content:space-between;gap:12px;padding:16px 16px 0}
+.landing-wrapper .fj-h h3{margin:0;font-size:19px;line-height:1.25;font-weight:700}
+.landing-wrapper .fj-h p{margin:2px 0 0;color:var(--muted);font-size:15px}
+.landing-wrapper .fj-lg{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px}
+.landing-wrapper .fj-tags{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px 0}
+.landing-wrapper .fj-tags span{border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px;font-weight:500}
+.landing-wrapper .fj-tags .pay{color:var(--green);border-color:var(--green)}
+.landing-wrapper .fj-sk{margin:10px 16px 0;color:var(--muted);font-size:15px}
+.landing-wrapper .fj-loc{display:flex;align-items:center;gap:6px;margin:4px 16px 0;color:var(--muted);font-size:14px}
+.landing-wrapper .fj-f{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding:10px 16px;border-top:1px solid var(--line)}
+.landing-wrapper .fj-view{background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:15px;border-radius:999px;padding:8px 18px}
+.landing-wrapper .fj-star{color:#F59E0B;font-size:22px}
+.landing-wrapper .fj-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;min-height:56px;background:#fff;color:var(--ink);border-radius:16px;font-size:20px;font-weight:600;text-decoration:none}
+.landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;opacity:.9}
+@media (min-width:768px){.landing-wrapper .fj{padding:64px 0 48px}.landing-wrapper .fj h2{font-size:44px}}
+
+/* 3. Stats section spacing */
+.landing-wrapper .stats-sec{padding-bottom:var(--sec)}
+
+/* 4. Logo slider (static copy of the jobs ticker look) */
+.landing-wrapper .ls{overflow:hidden;background:#0A0A0A;border-block:1px solid rgba(255,255,255,.1);height:84px;display:flex;align-items:center}
+.landing-wrapper .ls-track{display:flex;width:max-content;animation:lsMarquee 60s linear infinite}
+.landing-wrapper .ls:hover .ls-track,.landing-wrapper .ls:focus-within .ls-track{animation-play-state:paused}
+.landing-wrapper .ls-set{display:flex}
+.landing-wrapper .ls-card{display:flex;align-items:center;gap:12px;margin-right:48px;color:#fff;text-decoration:none;white-space:nowrap}
+.landing-wrapper .ls-logo{width:40px;height:40px;border-radius:9px;background:#1F1F1F;border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;font-weight:600}
+.landing-wrapper .ls-txt{display:flex;flex-direction:column}
+.landing-wrapper .ls-meta{font-size:12px;color:#A1A1AA}
+.landing-wrapper .ls-meta b{color:#D4D4D8;font-weight:500}
+.landing-wrapper .ls-title{font-size:15px;font-weight:700}
+@keyframes lsMarquee{to{transform:translateX(-50%)}}
+@media (min-width:768px){.landing-wrapper .ls{height:104px}.landing-wrapper .ls-logo{width:48px;height:48px}.landing-wrapper .ls-title{font-size:17px}.landing-wrapper .ls-meta{font-size:13px}}
+
+/* 7. Reviews carousel */
+.landing-wrapper .rv{background:var(--soft);padding-bottom:28px;margin-top:var(--sec)}
+.landing-wrapper .rv-track{list-style:none;margin:24px 0 0;padding:0 var(--pad) 4px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--pad);scrollbar-width:none}
+.landing-wrapper .rv-track::-webkit-scrollbar{display:none}
+.landing-wrapper .rv-card{flex:0 0 80%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;min-height:200px}
+.landing-wrapper .rv-top{display:flex;align-items:center;gap:12px}
+.landing-wrapper .rv-av{flex:none;width:44px;height:44px;border-radius:50%;background:var(--blue-100);color:var(--blue-d);display:grid;place-items:center;font-weight:700;font-size:14px}
+.landing-wrapper .rv-top b{display:block;font-size:15px;color:var(--navy)}
+.landing-wrapper .rv-st{color:#F59E0B;letter-spacing:1px}
+.landing-wrapper .rv-card p{margin:14px 0 0;font-size:17px;line-height:1.5;color:var(--ink)}
+.landing-wrapper .rv-hint{margin:16px 0 0;text-align:center;color:var(--muted);font-size:15px}
+@media (min-width:768px){.landing-wrapper .rv-card{flex-basis:44%}}
+@media (min-width:1024px){.landing-wrapper .rv-track{max-width:1120px;margin-inline:auto}.landing-wrapper .rv-card{flex-basis:calc((100% - 32px)/3)}.landing-wrapper .rv-hint{display:none}}
+
+/* 8. Founder with stats row */
+.landing-wrapper .fd{max-width:760px}
+.landing-wrapper .fd-top{display:flex;align-items:center;gap:20px}
+.landing-wrapper .fd-ph{flex:none;width:96px;height:96px;border-radius:50%;background:var(--blue-50);border:2px dashed var(--blue-100);display:grid;place-items:center;color:var(--muted);font-size:13px;font-weight:600}
+.landing-wrapper .fd h2{margin:0;font-size:24px;line-height:1.2;font-weight:800;color:var(--navy)}
+.landing-wrapper .fd-role{margin:4px 0 0;color:var(--muted);font-size:17px}
+.landing-wrapper .fd-bio{margin:20px 0 0;font-size:18px;line-height:1.6;color:var(--ink)}
+.landing-wrapper .fd-stats{display:grid;grid-template-columns:repeat(3,1fr);margin:24px 0 0;text-align:center}
+.landing-wrapper .fd-stats div{display:flex;flex-direction:column-reverse}
+.landing-wrapper .fd-stats dd{margin:0;font-size:24px;font-weight:800;color:var(--navy)}
+.landing-wrapper .fd-stats dt{margin-top:4px;color:var(--muted);font-size:15px}
+@media (min-width:768px){.landing-wrapper .fd-ph{width:120px;height:120px}.landing-wrapper .fd h2{font-size:30px}}
+
+/* 10. Free preview spacing (band itself styled in landing.css) */
+.landing-wrapper .free-preview-band{margin-top:var(--sec)}
+
+/* Sticky dark CTA bar */
+.landing-wrapper .sb{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:12px;max-width:680px;margin:0 auto;padding:8px 8px 8px 12px;background:var(--navy);border-radius:20px;color:#fff;box-shadow:0 12px 32px -8px rgba(9,14,52,.5)}
+.landing-wrapper .sb img{width:48px;height:48px;object-fit:contain}
+.landing-wrapper .sb p{flex:1;margin:0;min-width:0;line-height:1.25}
+.landing-wrapper .sb b{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:14px}
+.landing-wrapper .sb p span{font-size:13px;opacity:.85}
+.landing-wrapper .sb a{flex:none;background:#fff;color:var(--navy);text-decoration:none;font-weight:700;font-size:17px;border-radius:14px;padding:14px 18px}
+@media (min-width:768px){.landing-wrapper .sb b{font-size:15px}.landing-wrapper .sb p span{font-size:14px}}
