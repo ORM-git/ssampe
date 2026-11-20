@@ -12,10 +12,10 @@ App links point to https://careermonke.com.
 
 ## Placeholders to replace before launch
 
-Search `index.html` for `[`:
-- Reviews: `[Reviewer name N]`, `[PLACEHOLDER REVIEW N ...]`, avatar initials `R1`..`R6`
-- Founder: `[Founder name]`, `[Photo]` (swap the `.fd-ph` div for an `<img>`), `[PLACEHOLDER FOUNDER BIO ...]`, the three `[00K+]` / `[Label N]` stats
-- "Find jobs" cards and the logo slider use sample companies, marked as sample on the page.
+Search `index.html` for `PLACEHOLDER`:
+- Reviews (marquee and the wall after the FAQ): `[Reviewer name N]`, `[PLACEHOLDER REVIEW N ...]`, initials `R1`..`R6`
+- Founder stats: the three `[00K+]` / `[PLACEHOLDER stat label N]` items (CareerMonke has no founder stats to copy)
+- Hero job cards (Microsoft, Spotify) and the Find jobs / logo slider companies are sample listings, labelled as such on the page.
 
 ## Deploy on Netlify
 

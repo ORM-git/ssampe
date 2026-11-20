@@ -25,102 +25,34 @@
 </header>
 <main id="main">
   <section class="wrap hero band" aria-labelledby="hero-h">
-    <div class="hsp hsp0" aria-hidden="true"></div>
     <div class="hero-top">
     <p class="badge"><i aria-hidden="true"></i>1,240 new jobs found today</p>
     <h1 id="hero-h"><span class="l2">Start <span class="nw">job<span class="mx" aria-label="maxx"><span class="m1" aria-hidden="true">m</span><span class="m2" aria-hidden="true">a</span><span class="m3" aria-hidden="true">x</span><span class="m4" aria-hidden="true">x</span></span>ing</span></span></h1>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://careermonke.com/signup">Sign up for free</a>
-      <a class="btn btn-ghost" href="#demo" id="try-demo">Try the demo</a>
     </div>
     </div>
-
-    
-    <div class="hsp hsp1" aria-hidden="true"></div>
-    <div class="demo-wrap" id="demo">
-      <section class="demo" aria-label="Interactive demo with sample jobs">
-        <div class="demo-bar">
-          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          <ol class="steps" aria-label="Demo progress">
-            <li data-step="0" class="on" aria-current="step">Find</li>
-            <li data-step="1">Match</li>
-            <li data-step="2">Tailor</li>
-            <li data-step="3">Send</li>
-          </ol>
-          <span class="demo-tag">Sample jobs</span>
-        </div>
-        <div class="demo-body">
-          
-          <div class="state" data-state="pick">
-            <h2 class="q" tabindex="-1">What kind of job do you want?</h2>
-            <div class="fields" role="group" aria-label="Job fields">
-              <span class="hand" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24"><path d="M9 11.2V4.6a1.6 1.6 0 0 1 3.2 0v5.2l.1-.9a1.6 1.6 0 0 1 3.2.2v1.1a1.6 1.6 0 0 1 3.2.3v.9a1.5 1.5 0 0 1 3 .2v3.9c0 3.6-2.6 6.5-6.2 6.5h-1.6c-2 0-3.8-1-4.9-2.6L4.6 14a1.6 1.6 0 0 1 2.6-1.9z" fill="#fff" stroke="#090E34" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
-              <button class="chip" type="button" data-field="backend">Backend</button>
-              <button class="chip" type="button" data-field="remote">Remote</button>
-              <button class="chip" type="button" data-field="marketing">Marketing</button>
-              <button class="chip" type="button" data-field="data">Data &amp; AI</button>
-              <button class="chip" type="button" data-field="sales">Sales</button>
-              <button class="chip" type="button" data-field="design">Design</button>
-            </div>
-            <p class="hint">Tap a job type to try it.</p>
-          </div>
-          
-          <div class="state" data-state="scan" hidden>
-            <div class="scan">
-              <h2 class="q" tabindex="-1">Checking career pages…</h2>
-              <p class="hint" id="scan-sub">Looking for jobs that fit you</p>
-              <div class="bar" aria-hidden="true"><b id="scan-bar"></b></div>
-              <div class="counters">
-                <div class="counter"><strong id="c-pages">0</strong><span>pages checked</span></div>
-                <div class="counter"><strong id="c-jobs">0</strong><span>jobs for you</span></div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="state" data-state="match" hidden>
-            <p class="found" id="found"></p>
-            <div class="job">
-              <span class="logo" id="j-logo" aria-hidden="true">F</span>
-              <div class="job-txt">
-                <h2 class="job-title q" tabindex="-1" id="j-title"></h2>
-                <p class="job-meta" id="j-meta"></p>
-                <p class="job-meta2"><span>Only on company site</span> · <span id="j-posted"></span></p>
-              </div>
-              <div class="score" role="img" id="score" aria-label="">
-                <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="22" stroke="#EFF4FF" stroke-width="6" fill="none"/><circle id="ring" cx="26" cy="26" r="22" stroke="#2563EB" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2" style="transition:stroke-dashoffset .6s ease"/></svg>
-                <span class="num" id="score-num" aria-hidden="true">0%</span>
-                <span class="gain" id="j-gain" aria-hidden="true"></span>
-              </div>
-            </div>
-            <div id="m-panel">
-              <div class="skills"><span id="m-label">3 skills missing:</span><span id="m-skills" style="display:contents"></span></div>
-            </div>
-            <div id="t-panel" hidden>
-              <div class="resume" aria-live="polite"><small id="t-for"></small><span id="t-line"></span></div>
-            </div>
-            <button class="btn btn-primary" type="button" id="act" aria-label="Tailor my resume">Tailor my resume</button>
-          </div>
-          
-          <div class="state" data-state="applied" hidden>
-            <div class="done-wrap">
-              <span class="done-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M5 11.5l4 4 8-9" stroke="#0F7A42" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <h2 class="q" tabindex="-1">Applied in 18 seconds.</h2>
-              <p id="applied-sub">Found early, tailored for the role, and sent straight to the company. That&apos;s the whole hunt.</p>
-              <div class="done-btns">
-                <a class="btn btn-primary" href="https://careermonke.com/signup">Get my real matches</a>
-                <button class="btn btn-ghost" type="button" id="again">Try another field</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="sr" aria-live="polite" id="announce"></p>
-      </section>
+    <div class="hj" aria-label="Sample job listings" role="region">
+      <p class="hj-tag">Sample listings · for illustration only</p>
+      <div class="fj-cards">
+        <article class="fj-card">
+          <div class="fj-h"><div><h3>Software Engineer</h3><p>Microsoft</p></div><span class="hj-logo"><svg viewBox="0 0 23 23" width="40" height="40" role="img" aria-label="Microsoft logo"><path fill="#F25022" d="M1 1h10v10H1z"/><path fill="#7FBA00" d="M12 1h10v10H12z"/><path fill="#00A4EF" d="M1 12h10v10H1z"/><path fill="#FFB900" d="M12 12h10v10H12z"/></svg></span></div>
+          <div class="fj-tags"><span class="pay">$110K–$180K/year (sample)</span><span>Remote</span><span>Full Time</span></div>
+          <p class="fj-sk">TypeScript · Azure · C#</p>
+          <p class="fj-loc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>United States</p>
+          <div class="fj-f"><a class="fj-view" href="https://careermonke.com/jobs">View job</a><span class="fj-star" aria-hidden="true">☆</span></div>
+        </article>
+        <article class="fj-card">
+          <div class="fj-h"><div><h3>Backend Engineer</h3><p>Spotify</p></div><span class="hj-logo"><svg viewBox="0 0 24 24" width="40" height="40" role="img" aria-label="Spotify logo"><path fill="#1ED760" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></span></div>
+          <div class="fj-tags"><span class="pay">$120K–$170K/year (sample)</span><span>Remote</span><span>Full Time</span></div>
+          <p class="fj-sk">Java · Kafka · GCP</p>
+          <p class="fj-loc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Remote, Europe</p>
+          <div class="fj-f"><a class="fj-view" href="https://careermonke.com/jobs">View job</a><span class="fj-star" aria-hidden="true">☆</span></div>
+        </article>
+      </div>
+      <a class="fj-btn" href="https://careermonke.com/jobs">View Jobs <span aria-hidden="true">→</span></a>
+      <p class="fj-note">Free preview</p>
     </div>
-    <ul class="shots" aria-label="Product screenshots">
-      <li><img src="/features/job-search.webp" alt="Job search: verified jobs direct from company sites" width="1024" height="1024" loading="lazy"><span>Verified jobs</span></li>
-      <li><img src="/features/personalized-matches.webp" alt="Personalized job matches ranked by fit" width="1024" height="1024" loading="lazy"><span>Personalized matches</span></li>
-      <li><img src="/features/tailored-resume.webp" alt="Resume tailored to a job description" width="1024" height="1024" loading="lazy"><span>Tailored resume</span></li>
-    </ul>
   </section>
 
   <section class="fj" aria-labelledby="fj-h">
@@ -256,20 +188,27 @@
       <li class="rv-card"><div class="rv-top"><span class="rv-av" aria-hidden="true">R4</span><span><b>[Reviewer name 4]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</p></li>
       <li class="rv-card"><div class="rv-top"><span class="rv-av" aria-hidden="true">R5</span><span><b>[Reviewer name 5]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</p></li>
       <li class="rv-card"><div class="rv-top"><span class="rv-av" aria-hidden="true">R6</span><span><b>[Reviewer name 6]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R1</span><span><b>[Reviewer name 1]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R2</span><span><b>[Reviewer name 2]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R3</span><span><b>[Reviewer name 3]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R4</span><span><b>[Reviewer name 4]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R5</span><span><b>[Reviewer name 5]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</p></li>
+      <li class="rv-card" aria-hidden="true"><div class="rv-top"><span class="rv-av" aria-hidden="true">R6</span><span><b>[Reviewer name 6]</b><span class="rv-st" aria-label="5 out of 5 stars">★★★★★</span></span></div><p>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</p></li>
     </ul>
     <p class="rv-hint">Swipe for more</p>
   </section>
 
   <section class="wrap s fd" aria-labelledby="fd-h">
     <div class="fd-top">
-      <div class="fd-ph" role="img" aria-label="Founder photo placeholder">[Photo]</div>
-      <div><h2 id="fd-h">[Founder name] here, saying hello.</h2><p class="fd-role">Creator of CareerMonke</p></div>
+      <img class="fd-ph" src="/owner.jpg" alt="Orissa Lee Patnaik, founder of CareerMonke" width="120" height="120" loading="lazy">
+      <div><h2 id="fd-h">Orissa here!</h2><p class="fd-role">Creator of CareerMonke</p></div>
     </div>
-    <p class="fd-bio">[PLACEHOLDER FOUNDER BIO: two or three sentences on why CareerMonke exists. Replace before launch.]</p>
+    <p class="fd-bio">Growing up in the US and living in India showed me the friction of job hunting is universal. Broken software discards qualified people, and legacy sites make every role a cattle call.</p>
+    <p class="fd-bio">I built CareerMonke to cut through the noise, give candidates leverage back, and land your story directly with real people without the unnecessary hollow hustle rhetoric.</p>
     <dl class="fd-stats">
-      <div><dt>[Label 1]</dt><dd>[00K+]</dd></div>
-      <div><dt>[Label 2]</dt><dd>[00K+]</dd></div>
-      <div><dt>[Label 3]</dt><dd>[00K+]</dd></div>
+      <div><dt>[PLACEHOLDER stat label 1]</dt><dd>[00K+]</dd></div>
+      <div><dt>[PLACEHOLDER stat label 2]</dt><dd>[00K+]</dd></div>
+      <div><dt>[PLACEHOLDER stat label 3]</dt><dd>[00K+]</dd></div>
     </dl>
   </section>
   
@@ -284,6 +223,48 @@
     </div>
   </section>
   
+  <section class="wrap s" aria-labelledby="w-h">
+    <h2 class="h2" id="w-h">From early&#8209;access users</h2>
+    <div class="wl" tabindex="0" aria-label="Wall of reviews. Hover or focus to pause.">
+      <ul class="wl-col wl-down">
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R4</i></span><span><b>[Reviewer name 4]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R5</i></span><span><b>[Reviewer name 5]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R4</i></span><span><b>[Reviewer name 4]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R5</i></span><span><b>[Reviewer name 5]</b><small>★★★★★</small></span></p></li>
+      </ul>
+      <ul class="wl-col wl-up">
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R6</i></span><span><b>[Reviewer name 6]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R4</i></span><span><b>[Reviewer name 4]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R6</i></span><span><b>[Reviewer name 6]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 4: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R4</i></span><span><b>[Reviewer name 4]</b><small>★★★★★</small></span></p></li>
+      </ul>
+      <ul class="wl-col wl-down">
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R5</i></span><span><b>[Reviewer name 5]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R6</i></span><span><b>[Reviewer name 6]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 5: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R5</i></span><span><b>[Reviewer name 5]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 6: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R6</i></span><span><b>[Reviewer name 6]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 1: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R1</i></span><span><b>[Reviewer name 1]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 2: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R2</i></span><span><b>[Reviewer name 2]</b><small>★★★★★</small></span></p></li>
+        <li class="wl-card" aria-hidden="true"><blockquote>[PLACEHOLDER REVIEW 3: replace with a real CareerMonke user quote.]</blockquote><p class="wl-by"><span class="mq-av"><i>R3</i></span><span><b>[Reviewer name 3]</b><small>★★★★★</small></span></p></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="free-preview-band" aria-labelledby="cta-h">
     <div class="wrap free-preview">
       <h2 class="fp-title" id="cta-h">Free preview</h2>
@@ -327,7 +308,7 @@
 </footer>
 
 <aside class="sb" aria-label="View jobs">
-  <img src="/mascot.png" alt="" width="56" height="56">
+  <img src="/careermonke-logo.png" alt="CareerMonke logo" width="56" height="56">
   <p><b>CareerMonke</b><span>Verified jobs, direct from employers</span></p>
   <a href="https://careermonke.com/jobs">View Jobs <span aria-hidden="true">→</span></a>
 </aside>
