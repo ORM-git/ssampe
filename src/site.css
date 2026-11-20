@@ -74,12 +74,9 @@
 .landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;color:var(--muted)}
 
 /* stats row, after the job cards */
-.landing-wrapper .stats-row{padding-top:48px;padding-bottom:48px}
-@media (min-width:768px){.landing-wrapper .stats-row{padding-top:72px;padding-bottom:72px}}
-/* first screen: hero + job cards fill the viewport below the 52px header, so the stats row starts below the fold */
-.landing-wrapper .first{display:flex;flex-direction:column;min-height:calc(100vh - 52px);min-height:calc(100svh - 52px)}
-.landing-wrapper .first > *{width:100%}
-.landing-wrapper .first > .hjs{flex:1}
+/* even gap above and below the stats row: 36px phones, 48px desktop */
+.landing-wrapper section.stats-row{padding-top:36px;padding-bottom:36px}
+@media (min-width:768px){.landing-wrapper section.stats-row{padding-top:48px;padding-bottom:48px}}
 .landing-wrapper .stats-row .stats{margin-top:0}
 
 /* 4. Logo slider (static copy of the jobs ticker look) */
@@ -156,7 +153,6 @@
 @media (min-width:768px){
   body{margin:0}
   .landing-wrapper .top{height:48px}
-  .landing-wrapper .first{min-height:calc(100vh - 48px);min-height:calc(100svh - 48px)}
   .landing-wrapper .hero{padding-top:4px;padding-bottom:8px}
   .landing-wrapper .hero h1{margin-top:2px}
   .landing-wrapper .hero h1 .l2{margin-top:0}
