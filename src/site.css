@@ -86,3 +86,31 @@
 .landing-wrapper .sb p span{font-size:13px;opacity:.85}
 .landing-wrapper .sb a{flex:none;background:#fff;color:var(--navy);text-decoration:none;font-weight:700;font-size:17px;border-radius:14px;padding:14px 18px}
 @media (min-width:768px){.landing-wrapper .sb b{font-size:15px}.landing-wrapper .sb p span{font-size:14px}}
+
+/* Phones: fit hero, both job cards, View Jobs and "Free preview" in the first screen (360x740 and up). Spacing/sizing only. */
+@media (max-width:767px){
+  body{margin:0}
+  .landing-wrapper .top{height:52px}
+  .landing-wrapper .hero{padding-top:16px;padding-bottom:24px}
+  .landing-wrapper .hero h1{margin-top:8px}
+  .landing-wrapper .hero h1 .l2{margin-top:4px}
+  .landing-wrapper .hero .sub{margin-top:6px}
+  .landing-wrapper .cta-row{margin-top:10px}
+  .landing-wrapper section.hjs{padding-top:20px}
+  .landing-wrapper .fj-card{margin-bottom:8px}
+  .landing-wrapper .fj-h{padding:12px 14px 0}
+  .landing-wrapper .fj-h h3{font-size:17px}
+  .landing-wrapper .fj-h p{font-size:14px}
+  .landing-wrapper .hj-logo,.landing-wrapper .hj-logo svg{width:34px;height:34px}
+  .landing-wrapper .fj-tags{gap:6px;padding:8px 14px 0;flex-wrap:nowrap}
+  .landing-wrapper .fj-tags span{padding:2px 9px;font-size:13px;white-space:nowrap}
+  .landing-wrapper .fj-sk{margin:6px 14px 0;font-size:14px}
+  .landing-wrapper .fj-loc{margin:2px 14px 0;font-size:13px}
+  .landing-wrapper .fj-f{margin-top:8px;padding:6px 14px}
+  .landing-wrapper .fj-view{padding:6px 16px;font-size:14px}
+  .landing-wrapper .fj-star{font-size:20px}
+  /* View Jobs sits over the faded lower part of the second card */
+  .landing-wrapper .fj-card+.fj-card{padding-bottom:12px;margin-bottom:-28px}
+  .landing-wrapper .fj-btn{position:relative;z-index:1;min-height:48px;margin-top:0;font-size:18px}
+  .landing-wrapper .fj-note{margin-top:6px}
+}
