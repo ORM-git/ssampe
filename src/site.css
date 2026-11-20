@@ -74,9 +74,8 @@
 .landing-wrapper .fj-note{margin:10px 0 0;font-size:14px;color:var(--muted)}
 
 /* stats row, after the job cards */
-/* even gap above and below the stats row: 36px phones, 48px desktop */
-.landing-wrapper section.stats-row{padding-top:36px;padding-bottom:36px}
-@media (min-width:768px){.landing-wrapper section.stats-row{padding-top:48px;padding-bottom:48px}}
+/* stats row: same section gap above and below */
+.landing-wrapper section.stats-row{padding-top:var(--sec);padding-bottom:var(--sec)}
 .landing-wrapper .stats-row .stats{margin-top:0}
 
 /* 4. Logo slider (static copy of the jobs ticker look) */
@@ -165,13 +164,32 @@
   .landing-wrapper .fj-note{margin-top:4px}
 }
 
-/* One vertical rhythm from hero to footer: R = 36px phones, 48px desktop.
-   Same background: R between blocks. A background band gets R inside and R outside.
+/* One vertical rhythm from hero to footer: R = 60px phones, 80px desktop.
+   Text to text is R everywhere. At a background edge (bands, logo strip, footer) R is split: half outside, half inside.
    Hero to job cards splits R across the hero edge (R/2 each side) to keep the first screen. */
-.landing-wrapper{--sec:36px}
-@media (min-width:768px){.landing-wrapper{--sec:48px}}
+.landing-wrapper{--sec:60px}
+@media (min-width:768px){.landing-wrapper{--sec:80px}}
+.landing-wrapper{--half:calc(var(--sec) / 2)}
 .landing-wrapper main{padding-bottom:0}
-.landing-wrapper section.s.band{margin-top:var(--sec)}
-.landing-wrapper .rv{padding-bottom:var(--sec)}
-.landing-wrapper .free-preview-band{padding-top:var(--sec);padding-bottom:var(--sec)}
-.landing-wrapper footer{padding-top:var(--sec)}
+/* logo strip: its cards sit 22px (phones) / 28px (desktop) inside the bar, so text to strip cards is still R */
+.landing-wrapper{--ls-in:22px}
+@media (min-width:768px){.landing-wrapper{--ls-in:28px}}
+.landing-wrapper section.stats-row{padding-bottom:calc(var(--sec) - var(--ls-in))}
+.landing-wrapper .ls + section.s{padding-top:calc(var(--sec) - var(--ls-in))}
+.landing-wrapper section.rv,.landing-wrapper section.s.band{margin-top:var(--half);padding-top:var(--half);padding-bottom:var(--half)}
+.landing-wrapper section.rv + section.s,.landing-wrapper section.s.band + section.s{padding-top:var(--half)}
+.landing-wrapper .free-preview-band{margin-top:var(--half);padding-top:var(--half);padding-bottom:var(--half)}
+.landing-wrapper footer{padding-top:var(--half)}
+/* section heading to its content: 28px phones, 32px desktop (founder and Free preview keep their title/subtitle pairs) */
+.landing-wrapper :is(.vs,.fx,.rv-track,.faq,.wl){margin-top:28px}
+@media (min-width:768px){.landing-wrapper :is(.vs,.fx,.rv-track,.faq,.wl){margin-top:32px}}
+/* a little more room inside cards and blocks */
+.landing-wrapper .rv-card{padding:22px}
+.landing-wrapper .wl-card{padding:12px}
+.landing-wrapper .faq summary{padding-top:18px;padding-bottom:18px}
+.landing-wrapper .faq details p{padding-bottom:20px}
+.landing-wrapper .vs td{padding-top:9px;padding-bottom:9px}
+@media (min-width:768px){.landing-wrapper .rv-card{padding:26px}.landing-wrapper .wl-card{padding:20px}.landing-wrapper .vs td{padding-top:12px;padding-bottom:12px}}
+/* feature rows: same gap as sections, no screen-height rows */
+.landing-wrapper .fx{gap:var(--sec)}
+.landing-wrapper .fxi{min-height:0}
