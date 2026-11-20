@@ -15,7 +15,13 @@ App links point to https://careermonke.com.
 Search `index.html` for `PLACEHOLDER`:
 - Reviews (marquee and the wall after the FAQ): `[Reviewer name N]`, `[PLACEHOLDER REVIEW N ...]`, initials `R1`..`R6`
 - Founder stats: the three `[00K+]` / `[PLACEHOLDER stat label N]` items (CareerMonke has no founder stats to copy)
-- Job cards (Microsoft, Spotify, after the hero) and the logo slider companies are sample listings; the cards are no longer labelled as samples on the page.
+- Job cards under the hero are sample listings for real companies (Stripe, Spotify).
+
+## Job cards
+
+Card data lives in `src/jobs/jobs.mjs`; logos in `public/logos/` (local SVGs from Simple Icons).
+To add a company: add one entry to the list and one logo file. The cards are rendered into the page at
+build time (`vite.config.mjs`), and the build fails if a listed logo file is missing.
 
 ## Deploy on Netlify
 
