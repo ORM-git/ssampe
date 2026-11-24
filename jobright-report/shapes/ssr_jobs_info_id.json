@@ -1,0 +1,245 @@
+{
+ "page": "/jobs/info/[id]",
+ "query": [
+  "id"
+ ],
+ "gssp": true,
+ "isr": false,
+ "runtimeConfig": null,
+ "props": {
+  "pageProps": {
+   "isMobile": "boolean",
+   "initialIsMobile": "boolean",
+   "isSsrMobile": "boolean",
+   "dataSource": {
+    "impId": "string",
+    "displayScore": "number",
+    "pos": "number",
+    "jobResult": {
+     "jobId": "string",
+     "jobTitle": "string",
+     "jobNlpTitle": "string",
+     "jobSeniority": "string",
+     "jobLocation": "string",
+     "jobLocations": [
+      "string",
+      "…len=1"
+     ],
+     "isRemote": "boolean",
+     "workModel": "string",
+     "publishTime": "string",
+     "publishTimeDesc": "string",
+     "salaryDesc": "string",
+     "minSalary": "number",
+     "maxSalary": "number",
+     "employmentType": "string",
+     "jobSummary": "string",
+     "jdResponsibilitySummary": "string",
+     "isCompanySiteLink": "boolean",
+     "jobRecruiter": "string",
+     "jobRecruiterProfileUrl": "string",
+     "applicantsCount": "number",
+     "minYearsOfExperience": "number",
+     "coreResponsibilities": [
+      "string",
+      "…len=9"
+     ],
+     "recommendationTags": [
+      "string",
+      "…len=4"
+     ],
+     "jobTags": [
+      "string",
+      "…len=1"
+     ],
+     "recommendationScores": [
+      {
+       "featureName": "string",
+       "displayName": "string",
+       "score": "number"
+      },
+      "…len=3"
+     ],
+     "skillSummaries": [
+      "string",
+      "…len=12"
+     ],
+     "educationSummaries": [],
+     "benefitsSummaries": [
+      "string",
+      "…len=4"
+     ],
+     "skillMatchingScores": [
+      {
+       "featureName": "string",
+       "displayName": "string",
+       "score": "number"
+      },
+      "…len=12"
+     ],
+     "industryMatchingScores": [],
+     "isDeleted": "boolean",
+     "jdLogo": "string",
+     "firstTaxonomy": "string",
+     "source": "number",
+     "sourceId": "string",
+     "socialConnections": [
+      {
+       "firstName": "string",
+       "fullName": "string",
+       "logoUrl": "string",
+       "companyName": "string",
+       "jobTitle": "string",
+       "linkedinUrl": "string"
+      },
+      "…len=4"
+     ],
+     "lat": "number",
+     "lng": "number",
+     "countryCode": "string",
+     "jdCoreSkills": [
+      {
+       "skill": "string",
+       "score": "number",
+       "type": "string"
+      },
+      "…len=12"
+     ],
+     "jobTaxonomyV3": [
+      "string",
+      "…len=3"
+     ],
+     "isToB": "boolean",
+     "isWorkAuthRequired": "boolean",
+     "isH1bSponsor": "boolean",
+     "isCitizenOnly": "boolean",
+     "isClearanceRequired": "boolean",
+     "whyJoinUs": "string",
+     "jobtargetEasyapply": "boolean",
+     "jobtargetQuestionnaire": "string",
+     "jobtargetJobId": "string",
+     "repost": "boolean",
+     "hiddenJob": "boolean",
+     "qualifications": {
+      "mustHave": [
+       "string",
+       "…len=11"
+      ],
+      "preferredHave": [
+       "string",
+       "…len=1"
+      ]
+     },
+     "detailQualifications": {
+      "mustHave": {
+       "yoe": [
+        "string",
+        "…len=1"
+       ],
+       "education": [],
+       "hardSkill": [
+        {
+         "skill": "string"
+        },
+        "…len=43"
+       ],
+       "softSkill": [
+        {
+         "skill": "string"
+        },
+        "…len=2"
+       ]
+      },
+      "preferredHave": {
+       "yoe": [],
+       "education": [],
+       "hardSkill": [
+        {
+         "skill": "string"
+        },
+        "…len=4"
+       ],
+       "softSkill": []
+      }
+     }
+    },
+    "companyResult": {
+     "companyId": "string",
+     "companyName": "string",
+     "companySize": "string",
+     "companyDesc": "string",
+     "gptShortDescription": "string",
+     "companyCategories": "string",
+     "companyGptCategories": [
+      "string",
+      "…len=5"
+     ],
+     "companyRecommendationTags": [],
+     "companyTwitterURL": "string",
+     "companyLinkedinURL": "string",
+     "companyCrunchbaseURL": "string",
+     "companyFoundYear": "string",
+     "companyLocation": "string",
+     "companyURL": "string",
+     "fundraisingCurrentStage": "string",
+     "fundraisingTotalFunding": "string",
+     "fundraisingKeyInvestors": [],
+     "fundraisingLatestRounds": [],
+     "leadership": [
+      {
+       "pname": "string",
+       "ptitle": "string",
+       "plinkedinUrl": "string",
+       "plogoUrl": "string"
+      },
+      "…len=1"
+     ],
+     "pressReferences": [
+      {
+       "url": "string",
+       "postedOn": "string",
+       "title": "string",
+       "publisher": "string"
+      },
+      "…len=3"
+     ],
+     "h1bAnnualJobCount": [],
+     "h1bTitleDistribution": [],
+     "isAgency": "boolean",
+     "linkedinCompanyId": "string",
+     "isTnt": "boolean",
+     "isForceJobLinkedinVerify": "boolean"
+    },
+    "jdResponsibilitySummary": "string"
+   },
+   "baseSalary": {
+    "currency": "string",
+    "value": {
+     "minValue": "number",
+     "maxValue": "number",
+     "unitText": "string",
+     "@type": "string"
+    },
+    "@type": "string"
+   },
+   "jobLocation": {
+    "address": {
+     "addressLocality": "string",
+     "addressRegion": "string",
+     "addressCountry": "string",
+     "@type": "string"
+    },
+    "latitude": "number",
+    "longitude": "number",
+    "@type": "string"
+   },
+   "logined": "boolean",
+   "jobHashedId": "string",
+   "isTntDetail": "boolean",
+   "pageUrl": "string",
+   "keepVisitorLayoutForPendingOnboarding": "boolean",
+   "industryTagGroup": "string"
+  },
+  "__N_SSP": "boolean"
+ }
+}

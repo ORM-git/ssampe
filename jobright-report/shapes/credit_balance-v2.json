@@ -1,0 +1,20 @@
+{
+ "request": "GET /swan/credit/balance-v2",
+ "status": 401,
+ "source_capture": "p_feed.evidence.json",
+ "query_params": [],
+ "request_headers": [
+  "accept",
+  "accept-language",
+  "baggage",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "sentry-trace",
+  "user-agent",
+  "x-client-type"
+ ],
+ "request_body_shape": null,
+ "response_body_shape": "captured"
+}

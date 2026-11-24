@@ -1,0 +1,125 @@
+{
+ "request": "GET /swan/recommend/landing/jobs",
+ "status": 200,
+ "source_capture": "s1.evidence.json",
+ "query_params": [],
+ "request_headers": [
+  "accept",
+  "accept-language",
+  "baggage",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "sentry-trace",
+  "user-agent",
+  "x-client-type"
+ ],
+ "request_body_shape": null,
+ "response_body_shape": {
+  "success": "boolean",
+  "errorCode": "number",
+  "errorMsg": "null",
+  "result": {
+   "jobList": [
+    {
+     "impId": "string",
+     "jobResult": {
+      "jobId": "string",
+      "jobTitle": "string",
+      "jobNlpTitle": "string",
+      "jobSeniority": "string",
+      "jobLocation": "string",
+      "jobLocations": [
+       "string",
+       "…len=1"
+      ],
+      "isRemote": "boolean",
+      "workModel": "string",
+      "publishTime": "string",
+      "publishTimeDesc": "string",
+      "salaryDesc": "string",
+      "employmentType": "string",
+      "jobSummary": "string",
+      "applicantsCount": "number",
+      "minYearsOfExperience": "number",
+      "coreResponsibilities": [
+       "string",
+       "…len=9"
+      ],
+      "recommendationTags": [
+       "string",
+       "…len=2"
+      ],
+      "jobTags": [
+       "string",
+       "…len=1"
+      ],
+      "url": "string",
+      "applyLink": "string",
+      "h1BStatus": "string",
+      "jdLogo": "string",
+      "lat": "number",
+      "lng": "number",
+      "jobtargetEasyapply": "boolean"
+     },
+     "companyResult": {
+      "companyId": "string",
+      "mongoId": "string",
+      "companyName": "string",
+      "companySize": "string",
+      "companyDesc": "string",
+      "gptShortDescription": "string",
+      "companyCategories": "string",
+      "companyRecommendationTags": [],
+      "companyTwitterURL": "string",
+      "companyLinkedinURL": "string",
+      "companyCrunchbaseURL": "string",
+      "companyLogo": "string",
+      "companyFoundYear": "string",
+      "companyLocation": "string",
+      "companyURL": "string",
+      "fundraisingCurrentStage": "string",
+      "fundraisingTotalFunding": "string",
+      "fundraisingLatestRounds": [],
+      "leadership": [
+       {
+        "pname": "string",
+        "ptitle": "string",
+        "plinkedinUrl": "string",
+        "plogoUrl": "string"
+       },
+       "…len=1"
+      ],
+      "pressReferences": [
+       {
+        "url": "string",
+        "postedOn": "string",
+        "title": "string",
+        "publisher": "string"
+       },
+       "…len=3"
+      ]
+     },
+     "displayScore": "number",
+     "jobNotes": {
+      "boostedFactor": "number",
+      "rankScore": "number",
+      "notesMap": {
+       "freshness_weight": "string",
+       "linkedin_job_id": "string",
+       "mix_rank_weight": "string",
+       "retrieve_score": "string",
+       "retriever": "string",
+       "retriever_key": "string",
+       "retriever_score": "string",
+       "taxonomy_ids": "string"
+      }
+     }
+    },
+    "…len=20"
+   ],
+   "impId": "null"
+  }
+ }
+}

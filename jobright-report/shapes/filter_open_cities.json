@@ -1,0 +1,25 @@
+{
+ "request": "GET /swan/filter/open/cities",
+ "status": 200,
+ "source_capture": "s1.evidence.json",
+ "query_params": [],
+ "request_headers": [
+  "accept",
+  "accept-language",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "user-agent"
+ ],
+ "request_body_shape": null,
+ "response_body_shape": {
+  "success": "boolean",
+  "errorCode": "number",
+  "errorMsg": "null",
+  "result": [
+   "string",
+   "…len=19206"
+  ]
+ }
+}

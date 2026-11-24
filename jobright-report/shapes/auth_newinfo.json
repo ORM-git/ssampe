@@ -1,0 +1,56 @@
+{
+ "request": "GET /swan/auth/newinfo",
+ "status": 200,
+ "source_capture": "s1.evidence.json",
+ "query_params": [],
+ "request_headers": [
+  "accept",
+  "accept-language",
+  "baggage",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "sentry-trace",
+  "user-agent",
+  "x-client-type"
+ ],
+ "request_body_shape": null,
+ "response_body_shape": {
+  "success": "boolean",
+  "errorCode": "number",
+  "errorMsg": "null",
+  "result": {
+   "logined": "boolean",
+   "userId": "null",
+   "currentStage": "null",
+   "email": "null",
+   "memberInfo": "null",
+   "resumeId": "null",
+   "resumeName": "null",
+   "linkedinResume": "boolean",
+   "firstName": "null",
+   "lastName": "null",
+   "fullName": "null",
+   "resumeErrMsg": "null",
+   "linkedinProfileErrMsg": "null",
+   "linkedinUrlVerified": "null",
+   "companyIds": "null",
+   "schoolIds": "null",
+   "isNew": "number",
+   "registerTime": "null",
+   "registerFrom": "null",
+   "clientTypes": "null",
+   "linkedinUrl": "null",
+   "enableAgent": "boolean",
+   "showCoachLaunch": "boolean",
+   "showCoachV2": "boolean",
+   "country": "null",
+   "config": {
+    "tgOfferJobViewThreshold": "number"
+   },
+   "verified": "boolean",
+   "topTalent": "boolean"
+  }
+ }
+}

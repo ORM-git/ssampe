@@ -1,0 +1,286 @@
+{
+ "page": "/[...slug]",
+ "query": [
+  "slug"
+ ],
+ "gssp": true,
+ "isr": false,
+ "runtimeConfig": null,
+ "props": {
+  "pageProps": {
+   "isMobile": "boolean",
+   "isGoogleBot": "boolean",
+   "queryParams": {
+    "slug": [
+     "string",
+     "…len=1"
+    ],
+    "domain": "string",
+    "type": "string",
+    "workModel": [
+     "number",
+     "…len=1"
+    ],
+    "seniority": [],
+    "city": "string",
+    "jobTitle": "string"
+   },
+   "defaultData": [
+    {
+     "impId": "string",
+     "jobResult": {
+      "jobId": "string",
+      "jobTitle": "string",
+      "jobNlpTitle": "string",
+      "jobSeniority": "string",
+      "jobLocation": "string",
+      "jobLocations": [
+       "string",
+       "…len=1"
+      ],
+      "isRemote": "boolean",
+      "workModel": "string",
+      "publishTime": "string",
+      "publishTimeDesc": "string",
+      "employmentType": "string",
+      "jobSummary": "string",
+      "applicantsCount": "number",
+      "minYearsOfExperience": "number",
+      "coreResponsibilities": [
+       "string",
+       "…len=14"
+      ],
+      "recommendationTags": [],
+      "jobTags": [
+       "string",
+       "…len=1"
+      ],
+      "requirements": [
+       "string",
+       "…len=10"
+      ],
+      "url": "string",
+      "applyLink": "string",
+      "h1BStatus": "string",
+      "jdLogo": "string",
+      "lat": "number",
+      "lng": "number",
+      "jobtargetEasyapply": "boolean"
+     },
+     "companyResult": {
+      "companyId": "string",
+      "mongoId": "string",
+      "companyName": "string",
+      "companySize": "string",
+      "companyDesc": "string",
+      "gptShortDescription": "string",
+      "companyCategories": "string",
+      "companyRecommendationTags": [],
+      "companyTwitterURL": "string",
+      "companyLinkedinURL": "string",
+      "companyLogo": "string",
+      "companyFoundYear": "string",
+      "companyLocation": "string",
+      "companyURL": "string",
+      "fundraisingCurrentStage": "string",
+      "fundraisingTotalFunding": "string",
+      "fundraisingLatestRounds": [],
+      "leadership": [],
+      "pressReferences": []
+     },
+     "displayScore": "number",
+     "jobNotes": {
+      "boostedFactor": "number",
+      "rankScore": "number",
+      "notesMap": {
+       "after_ts_filter": "string",
+       "bad_candidate_filter": "string",
+       "company_cat_filter": "string",
+       "company_scatter_demote": "string",
+       "company_stage_filter": "string",
+       "company_tier": "string",
+       "custom_title_direct_match": "string",
+       "direct_title_match_boost_weight": "string",
+       "dup_desc_filter": "string",
+       "e_city": "string",
+       "e_isH1BOnly": "string",
+       "e_job_type": "string",
+       "e_radius_range": "string",
+       "e_seniority": "string",
+       "e_taxonomy_ids": "string",
+       "e_w_model": "string",
+       "es_recall_deadline_nanos": "string",
+       "exclude_company_cat_filter_conf": "string",
+       "exclude_company_filter": "string",
+       "exclude_security_clearance_filter_conf": "string",
+       "exclude_skill_filter": "string",
+       "exclude_staffing_agency_filter": "string",
+       "expect_niche_category": "string",
+       "freshness_hours": "string",
+       "freshness_minutes": "string",
+       "freshness_weight": "string",
+       "h1b_filter": "string",
+       "isHiddenJob": "string",
+       "is_repost": "string",
+       "job_time_filter": "string",
+       "job_title_text_similarity": "string",
+       "linkedin_job_id": "string",
+       "min_required_years": "string",
+       "min_years_of_experience_range_filter": "string",
+       "mix_rank_weight": "string",
+       "mode": "string",
+       "modify_job_type": "string",
+       "modify_seniority": "string",
+       "originTitleEmbed_after_retrieve_exclusive_retrieve_num": "string",
+       "originTitleEmbed_after_retrieve_retrieve_num": "string",
+       "position": "string",
+       "ranking_test_1": "string",
+       "recommend_push": "string",
+       "recommend_recall": "string",
+       "recommend_strategy": "string",
+       "retrieve_score": "string",
+       "retrieve_trigger": "string",
+       "retriever": "string",
+       "retriever_key": "string",
+       "retriever_key_list": "string",
+       "retriever_score": "string",
+       "retriever_score_list": "string",
+       "role_type_filter": "string",
+       "salary_filter": "string",
+       "search_strategy": "string",
+       "search_strategy_type": "string",
+       "search_type": "string",
+       "search_words": "string",
+       "skill_filter": "string",
+       "sort_condition": "string",
+       "source": "string",
+       "startPos": "string",
+       "start_time_month_filter": "string",
+       "strategy_reverse": "string",
+       "taxonomy_ids": "string",
+       "taxonomy_relevance_filter": "string",
+       "titleText_after_retrieve_exclusive_retrieve_num": "string",
+       "titleText_after_retrieve_retrieve_num": "string",
+       "total_job_num": "string",
+       "unique_retrieve_num": "string",
+       "upfront_relevance_filter": "string"
+      }
+     }
+    },
+    "…len=20"
+   ],
+   "initialJobsError": "boolean",
+   "internListConf": {
+    "remote": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "newGradGuide": {
+     "title": "string",
+     "content": "string",
+     "action": "string",
+     "linkUrl": "string"
+    },
+    "internGuide": {
+     "title": "string",
+     "content": "string",
+     "action": "string",
+     "linkUrl": "string"
+    },
+    "caIntern": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "h1bNewGrad": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "newGrad": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "number",
+     "totalCountRemote": "number",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "govUsa": {
+     "newCount": "null",
+     "totalCount": "null",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "number",
+     "ts": "null",
+     "state_local": "number",
+     "private_sector": "number"
+    },
+    "intern": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "number",
+     "totalCountRemote": "number",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "caNewGrad": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    },
+    "marketing": {
+     "newCount": "number",
+     "totalCount": "number",
+     "newCountRemote": "null",
+     "totalCountRemote": "null",
+     "federal": "null",
+     "ts": "string",
+     "state_local": "null",
+     "private_sector": "null"
+    }
+   },
+   "params": {
+    "workModel": [
+     "number",
+     "…len=1"
+    ],
+    "city": "string",
+    "seniority": [],
+    "radiusRange": "number",
+    "type": "string",
+    "domain": "string",
+    "jobTitle": "string",
+    "slug": [
+     "string",
+     "…len=1"
+    ]
+   }
+  },
+  "__N_SSP": "boolean"
+ }
+}

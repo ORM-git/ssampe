@@ -1,0 +1,46 @@
+{
+ "request": "POST /swan/event/submit",
+ "status": 200,
+ "source_capture": "s1.evidence.json",
+ "query_params": [],
+ "request_headers": [
+  "accept",
+  "accept-language",
+  "baggage",
+  "content-type",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "sentry-trace",
+  "user-agent",
+  "x-client-type"
+ ],
+ "request_body_shape": {
+  "timestamp": "number",
+  "timezoneId": "string",
+  "browserInfo": {
+   "userAgent": "string"
+  },
+  "eventDetail": {
+   "platform": "string",
+   "business_type": "string",
+   "release_version": "string",
+   "time_zone": "string",
+   "browser_type": "string",
+   "is_in_app": "boolean",
+   "user_agent": "string",
+   "is_mobile": "boolean",
+   "utm_source": "string",
+   "utm_campaign": "string"
+  },
+  "eventType": "string",
+  "channel": "string"
+ },
+ "response_body_shape": {
+  "success": "boolean",
+  "errorCode": "number",
+  "errorMsg": "null",
+  "result": "boolean"
+ }
+}
